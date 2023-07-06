@@ -2,11 +2,13 @@
 A Discord-self bot that evaluates raw Python code.
 
 ** Installation
-On Debian, here are the steps.
+On Debian-based systems, here are the steps:
 #+BEGIN_SRC bash
-sudo apt install firefox-esr python3.11 python3.11-venv
+sudo apt install firefox-esr python3.11 python3.11-venv git
 git clone https://github.com/aiyazmostofa/eval-self-bot.git
 cd eval-self-bot
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 echo "TOKEN" >> token
 python3 bot.py
@@ -18,6 +20,7 @@ Example message:
 #+BEGIN_SRC
 $py
 print(3+2)
+print("hello world")
 $py
 #+END_SRC
 A message must start with =$py\n= and end with =\n$py=.
