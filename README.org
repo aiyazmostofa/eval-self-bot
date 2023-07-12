@@ -1,13 +1,13 @@
-* Eval Self Bot
-A Discord-self bot that evaluates raw Python code.
+* Exec Self Bot
+A Discord-self bot that executes raw Python code.
 
 ** Installation
 On Debian-based systems, here are the steps:
 #+BEGIN_SRC bash
 sudo apt install firefox-esr python3.11 python3.11-venv git tmux
-git clone https://github.com/aiyazmostofa/eval-self-bot.git
-cd eval-self-bot
-tmux new -s eval-self-bot
+git clone https://github.com/aiyazmostofa/exec-self-bot.git
+cd exec-self-bot
+tmux new -s exec-self-bot
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
