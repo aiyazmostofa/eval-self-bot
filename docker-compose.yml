@@ -1,3 +1,4 @@
 services:
-  bot:
+  exec-self-bot:
+    container_name: exec-self-bot
     build: .
